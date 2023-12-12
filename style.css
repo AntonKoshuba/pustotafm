@@ -1,12 +1,15 @@
 :root {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
   font-size: 1em;
   line-height: 1.3em;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 body {
   /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   background: #F4F0E6;
   color: #1b2b4c;
   font-size: 19px;
@@ -30,10 +33,11 @@ h1 {
   font-weight: bold;
 }
 h1.title {
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   line-height: 1.3em;
-  color: #121212;
-  font-weight: 600;
+  color: #1b2b4c;
+  font-weight: bold;
+  font-family: Gilroy-ExtraBold;
 }
 /*Отступ от заголовка до абзаца*/
 
@@ -273,3 +277,21 @@ a:hover {
   flex-direction: row;
   justify-content: space-around;
 }
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+  font-family: "Gilroy"; 
+  // адрес шрифта и тип 
+  src: url("../fonts/Gilroy-Light.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+} 
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+  font-family: "Gilroy-ExtraBold"; 
+  // адрес шрифта и тип 
+  src: url("../fonts/Gilroy-ExtraBold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: bold; 
+} 
